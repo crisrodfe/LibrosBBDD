@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="BORRAR REGISTRO"
+        android:id="@+id/textViewBorrar"
+        android:gravity="center_vertical|center_horizontal"
+        android:padding="10dp"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Título :"
+        android:id="@+id/textView"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="75dp"
+        android:textColor="#5b6ed8"
+        android:textSize="24dp"
+        android:layout_below="@+id/textViewBorrar"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        style="@android:style/TextAppearance.Holo.Widget.EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextDeleteTitulo"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Borrar registro"
+        android:id="@+id/buttonDelete"
+        android:layout_below="@+id/editTextDeleteTitulo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp" />
+</RelativeLayout>
